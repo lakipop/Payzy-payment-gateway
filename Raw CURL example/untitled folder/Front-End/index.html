@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PAYZY Example Submit</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <form id="myForm">
+        <label>x_test_mode : </label>
+        <input type="text" name="x_test_mode" value="on" disabled="true" id="x_test_mode"> <br>
+        <label>x_shopid : </label>
+        <input type="text" name="x_shopid" value="2" id="x_shopid"> <br>
+        <label>x_amount : </label>
+        <input type="text" name="x_amount" value="10" id="x_amount"> <br>
+        <label>x_order_id : </label>
+        <input type="text" name="x_order_id" value="ABC-0001" id="x_order_id"> <br>
+        <label>x_response_url : </label>
+        <input type="submit" value="http://localhost:8080/responce.html" name="x_response_url" disabled="true" id="x_response_url"><br>
+        <label>x_first_name : </label>
+        <input type="text" name="x_first_name" value="John" id="x_first_name"> <br>
+        <label>x_last_name : </label>
+        <input type="text" name="x_last_name" value="Doe" id="x_last_name"> <br>
+        <label>x_company : </label>
+        <input type="text" name="x_company" value="ABC Company" id="x_company"> <br>
+        <label>x_address : </label>
+        <input type="text" name="x_address" value="123 Main St" id="x_address"> <br>
+        <label>x_country : </label>
+        <input type="text" name="x_country" value="Sri Lanka" id="x_country"> <br>
+        <label>x_state : </label>
+        <input type="text" name="x_state" value="Western" id="x_state"> <br>
+        <label>x_city : </label>
+        <input type="text" name="x_city" value="Colombo" id="x_city"> <br>
+        <label>x_zip : </label>
+        <input type="text" name="x_zip" value="12345" id="x_zip"> <br>
+        <label>x_phone : </label>
+        <input type="text" name="x_phone" value="1234567890" id="x_phone"> <br>
+        <label>x_email : </label>
+        <input type="text" name="x_email" value="exampl@email.com" id="x_email"><br>
+
+        <label>x_ship_to_first_name : </label>
+        <input type="text" name="x_ship_to_first_name" value="John" id="x_ship_to_first_name"> <br>
+        <label>x_ship_to_last_name : </label>
+        <input type="text" name="x_ship_to_last_name" value="Doe" id="x_ship_to_last_name"> <br>
+        <label>x_ship_to_company : </label>
+        <input type="text" name="x_ship_to_company" value="ABC Company" id="x_ship_to_company"> <br>
+        <label>x_ship_to_address : </label>
+        <input type="text" name="x_ship_to_address" value="123 Main St" id="x_ship_to_address"> <br>
+        <label>x_ship_to_country : </label>
+        <input type="text" name="x_ship_to_country" value="Sri Lanka" id="x_ship_to_country"> <br>
+        <label>x_ship_to_state : </label>
+        <input type="text" name="x_ship_to_state" value="Western" id="x_ship_to_state"> <br>
+        <label>x_ship_to_city : </label>
+        <input type="text" name="x_ship_to_city" value="Colombo" id="x_ship_to_city"> <br>
+        <label>x_ship_to_zip : </label>
+        <input type="text" name="x_ship_to_zip" value="12345" id="x_ship_to_zip"> <br>
+
+        <label>x_freight : </label>
+        <input type="text" name="x_freight" value="x_freight" disabled="true" id="x_freight"> <br>
+
+        <label>x_platform : </label>
+        <input type="text" name="x_platform" value="custom" disabled="true" id="x_platform"> <br>
+
+        <label>x_version : </label>
+        <input type="text" name="x_version" value="1.0" disabled="true" id="x_version"> <br>
+
+        <label>signed_field_names</label>
+        <input type="text" name="signed_field_names"
+            value="x_test_mode,x_shopid,x_amount,x_order_id,x_response_url,x_first_name,x_last_name,x_company,x_address,x_country,x_state,x_city,x_zip,x_phone,x_email,x_ship_to_first_name,x_ship_to_last_name,x_ship_to_company,x_ship_to_address,x_ship_to_country,x_ship_to_state,x_ship_to_city,x_ship_to_zip,x_freight,x_platform,x_version,signed_field_names"
+            disabled="true"> <br>
+
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

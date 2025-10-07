@@ -1,0 +1,67 @@
+{
+    "name": "payzy-laravel/payment-gateway",
+    "description": "Laravel package for Payzy Payment Gateway integration",
+    "type": "library",
+    "keywords": ["laravel", "payment", "gateway", "payzy", "sri lanka", "ecommerce"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Descenders Development Team",
+            "email": "dev@descenders.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/payzy-laravel/payment-gateway",
+    "support": {
+        "issues": "https://github.com/payzy-laravel/payment-gateway/issues",
+        "source": "https://github.com/payzy-laravel/payment-gateway"
+    },
+    "require": {
+        "php": "^8.1|^8.2|^8.3",
+        "laravel/framework": "^10.0|^11.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^8.0|^9.0",
+        "mockery/mockery": "^1.4.4",
+        "phpstan/phpstan": "^1.0",
+        "rector/rector": "^0.18",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PayzyLaravel\\PaymentGateway\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PayzyLaravel\\PaymentGateway\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PayzyLaravel\\PaymentGateway\\Providers\\PayzyServiceProvider"
+            ],
+            "aliases": {
+                "Payzy": "PayzyLaravel\\PaymentGateway\\Facades\\Payzy"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "refactor": "vendor/bin/rector process"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    }
+}
