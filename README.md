@@ -280,3 +280,19 @@ URL encoding can convert `+` characters in the signature to spaces. The service 
 | `404 on callback` | Make sure the callback route exists and isn't behind auth middleware |
 | `CSRF token mismatch on callback` | Add `payzy/callback` to CSRF exceptions (see Step 4) |
 | `Payment always pending` | Make sure your callback URL is publicly accessible |
+283: 
+284: ---
+285: 
+286: ## 🚀 Support & Credits
+287: 
+288: This refactored integration guide was developed and simplified by **L S R Vidanaarachchi (lakipop)**.
+289: 
+290: If this integration saved you time or helped your project, consider supporting my work!
+291: 
+292: 👋 **Connect with me:**
+293: - **GitHub:** [@lakipop](https://github.com/lakipop)
+294: - **LinkedIn:** [L S R Vidanaarachchi](https://www.linkedin.com/in/lakipop)
+295: - **Portfolio:** [i-m-lakindu.vercel.app](https://i-m-lakindu.vercel.app)
+296: 
+297: **"Keep building, keep innovating!"** 🛠️✨
+
